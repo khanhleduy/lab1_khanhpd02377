@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ADD.ThemTheLoaiActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"/>
+    <EditText
+        android:id="@+id/edtMaTheLoai"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã thể loại"
+        android:textColor="@color/colorGreen"
+        />
+    <EditText
+        android:id="@+id/edtTenTheLoai"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên thể loại"
+        android:textColor="@color/colorGreen"
+        />
+    <EditText
+        android:id="@+id/edtViTri"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vị trí"
+        android:textColor="@color/colorGreen"
+        />
+    <EditText
+        android:id="@+id/edtMoTa"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả"
+        android:textColor="@color/colorGreen"
+        />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnThemTL"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnThemTL"
+            android:text="THÊM"/>
+        <Button
+            android:id="@+id/btnHuyTL"
+            android:layout_weight="1"
+            android:onClick="btnHuyTL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HỦY"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnShowTL"
+        android:layout_marginTop="5dp"
+        android:onClick="btnShowTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show"/>
+
+
+</LinearLayout>

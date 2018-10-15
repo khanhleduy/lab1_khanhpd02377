@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itAdd"
+        android:title="Thêm"></item>
+    <item
+        android:id="@+id/itChangepass"
+        android:title="Đổi mật khẩu"></item>
+    <item
+        android:id="@+id/itLogOut"
+        android:title="Đăng xuất"></item>
+</menu>

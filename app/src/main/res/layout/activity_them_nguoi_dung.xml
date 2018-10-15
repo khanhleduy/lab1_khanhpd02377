@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ADD.ThemNguoiDungActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/edtNickName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Người dùng"
+        android:textColor="@color/colorGreen"
+        />
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Mật khẩu"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorGreen"
+        />
+    <EditText
+        android:id="@+id/edtCheckPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Nhập lại mật khẩu"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorGreen"
+        />
+    <EditText
+        android:id="@+id/edtSDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="SĐT"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorGreen"
+        />
+    <EditText
+        android:id="@+id/edtFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên đầy đủ"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorGreen"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorGreen"
+        >
+
+        <Button
+            android:id="@+id/btnThemND"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="THÊM"
+            android:onClick="addUser"
+            />
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HỦY"
+            android:onClick="showUser"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnDSND"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DANH SÁCH NGƯỜI DÙNG"
+        android:layout_marginTop="5dp"
+        android:onClick="btnDSND"
+        />
+
+</LinearLayout>

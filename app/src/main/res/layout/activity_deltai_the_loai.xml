@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.DeltaiTheLoaiActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"/>
+    <EditText
+        android:id="@+id/edtMaTheLoaiUpdate"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã thể loại"
+        android:textColor="@color/colorGreen"
+        />
+    <EditText
+        android:id="@+id/edtTenTheLoaiUpdate"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên thể loại"
+        android:textColor="@color/colorGreen"
+        />
+    <EditText
+        android:id="@+id/edtViTriUpdate"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vị trí"
+        android:textColor="@color/colorGreen"
+        />
+    <EditText
+        android:id="@+id/edtMoTaUpdate"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả"
+        android:textColor="@color/colorGreen"
+        />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUpdateTL"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+        <Button
+            android:id="@+id/btnHuyTLUpdate"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HỦY"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

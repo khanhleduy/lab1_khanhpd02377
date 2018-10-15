@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.NguoiDungDetailActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edtFullNameDeltaiND"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ và tên"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorGreen"
+        />
+    <EditText
+        android:id="@+id/edtPhoneDeltaiND"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorGreen"
+        />
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnUpdateND"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorGreen"
+            android:layout_marginRight="5dp"
+            android:onClick="updateUser"
+
+            />
+        <Button
+            android:id="@+id/btnExitND"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thoát"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorGreen"
+            android:onClick="btnExitND"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

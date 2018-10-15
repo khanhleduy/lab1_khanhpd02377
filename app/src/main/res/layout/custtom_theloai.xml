@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgTheLoai"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/cateicon" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_toRightOf="@+id/imgTheLoai"
+    >
+    <TextView
+        android:id="@+id/txtViTRi"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgTheLoai"
+        android:layout_alignParentStart="true"
+        android:singleLine="true"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtTheLoai"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtViTRi"
+        android:layout_alignBottom="@+id/imgTheLoai"
+        android:gravity="center_vertical"
+        android:text="TextView" />
+</LinearLayout>
+    <ImageView
+        android:id="@+id/imgDeleteTL"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_close"/>
+</RelativeLayout>

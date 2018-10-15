@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">lab1_khanhpd02377</string>
+    <string name="app_apple">Apple</string>
+    <string name="app_login">Login</string>
+    <string name="app_display">Quản lý sách</string>
+    <string name="app_changepass">Đổ mật khẩu</string>
+    <string name="app_Introduce">Quản lý sách</string>
+
+</resources>
